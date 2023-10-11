@@ -1,0 +1,22 @@
+﻿<Window x:Class="Tema2_CuadrosTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CuadrosTexto"
+        mc:Ignorable="d"
+        Title="Cuadros Texto" Height="308" Width="374">
+    <Grid HorizontalAlignment="Center" Width="374" Height="291" VerticalAlignment="Top">
+        <TextBlock HorizontalAlignment="Left" Margin="52,34,0,0" TextWrapping="Wrap" Text="Nombre" FontSize="16" VerticalAlignment="Top"/>
+        <TextBox x:Name="nombre" HorizontalAlignment="Left" Margin="52,55,0,0" TextWrapping="Wrap"  FontSize="16" VerticalAlignment="Top" Width="120" KeyDown="nombre_KeyDown"/>
+        <TextBlock x:Name="f1Nombre" HorizontalAlignment="Left" Margin="177,55,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" Width="136" Foreground="#FF616060" FontSize="12" Visibility="Collapsed"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="52,99,0,0" TextWrapping="Wrap" Text="Apellido" FontSize="16" VerticalAlignment="Top"/>
+        <TextBox x:Name="apellido" HorizontalAlignment="Left" Margin="52,120,0,0" TextWrapping="Wrap"  FontSize="16" VerticalAlignment="Top" Width="120" KeyDown="apellido_KeyDown"/>
+        <TextBlock x:Name="f1Apellido" HorizontalAlignment="Left" Margin="177,120,0,0" TextWrapping="Wrap" Text="Apellido del cliente" VerticalAlignment="Top" Width="116" Foreground="#FF616060" FontSize="12" Visibility="Collapsed"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="52,173,0,0" TextWrapping="Wrap" Text="Edad" FontSize="16" VerticalAlignment="Top"/>
+        <TextBox x:Name="edad" HorizontalAlignment="Left" Margin="52,194,0,0" TextWrapping="Wrap"  FontSize="16" VerticalAlignment="Top" Width="120" KeyDown="edad_KeyDown"/>
+        <TextBlock x:Name="f2Edad" HorizontalAlignment="Left" Margin="177,194,0,0" TextWrapping="Wrap" Text="No es un valor númerico" VerticalAlignment="Top" Width="141" Foreground="#FFED0B0B" FontSize="12" Visibility="Collapsed"/>
+    </Grid>
+</Window>
